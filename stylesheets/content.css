@@ -1,0 +1,996 @@
+body {
+  background: #010101;
+             /* Full height of the viewport */
+}
+
+.running_text {
+  position: relative;
+  width: -100%;
+  height: 5vw; /* Adjust height as needed */
+  background: hsl(267, 98%, 74%); /* Purple background */
+  /*overflow: hidden; /* Hide overflowing text */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  top: 0vw;
+}
+/* Scrolling Text */
+
+.text_first2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: "Exo_text";
+padding: 1VW;
+}
+
+/* Spacing Between Words */
+.text_item1 {
+  padding-right:2vw; /* Add spacing between phrases */
+}
+
+
+
+/* Общие стили для звезд */
+#smallstar1 img,
+#smallstar2 img {
+  position: absolute;
+  width: 2vw;
+  height: 4vh;
+  transform: scale(1);
+  animation: smallstars 2s ease-in-out infinite;
+}
+
+
+
+
+/* Индивидуальные позиции для звезд */
+#smallstar1 img {
+  position: absolute;
+  top: 10vw;
+  left: 80vw;
+}
+
+
+
+
+#smallstar2 img {
+  position: absolute;
+  top: 15vw;
+  left: 20vw;
+}
+
+
+
+
+/* Анимация масштабирования звезд */
+@keyframes smallstars {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/* Линии разноцветные */
+
+
+
+
+/* Контейнер для всех линий */
+.lines_container {
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 28vw;
+  /* Прижимаем контейнер к верхнему краю */
+  left: 0VW;
+  /* Прижимаем к левому краю */
+  width: 100%; /* Full width */
+  /* Контейнер на всю ширину */
+  height: 30vw;
+  /* Высота блока, г;де будут линии */
+  display: flex;
+  flex-direction: column;
+  /* Линии располагаются вертикально */
+  justify-content: space-around;
+  /* Распределяем линии равномерно */
+}
+
+
+
+
+/* Стиль для линий */
+.line_purple {
+  width: auto;
+  height: 1VW;
+  background-color: #B77DFE;
+}
+
+
+
+
+.line_red {
+  width: 100%; /* Full width */
+  height: 1vw;
+  background-color: #FF0101;
+}
+
+.line_green {
+  width: 100%; /* Full width */
+  height: 1vw;
+  background-color: #00A459;
+}
+
+.line_yellow {
+  width: 100%; /* Full width */
+  height: 1vw;
+  background-color: #FEFF01;
+  ;
+}
+
+.line_red2 {
+  width: 100%; /* Full width */
+  height: 1vw;
+  background-color: #FF0101;
+}
+
+.line_purple2 {
+  width: 100%; /* Full width */
+  height: 1vw;
+  background-color: #B77DFE;
+}
+
+
+/* <!-- Диск  --> */
+
+.orbit-container {
+  position: absolute;
+  top: 26vw;
+  left: 35VW;
+  background-color: black;
+  width: 31.25vw;
+  /* Container size */
+  height: 31.25vw;
+  /* Container size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.417vw solid white;
+  /* Thin white border */
+  border-radius: 0.521vw;
+  /* Rounded corners */
+  border-radius: 50vw;
+  animation: rotateOrbit 10s linear infinite;
+}
+
+
+.inner-circle {
+  position: absolute;
+  width: 23.438vw;
+  /* Inner circle size (300px radius) */
+  height: 23.438vw;
+  /* Inner circle size */
+  border-radius: 50vw;
+  /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.417vw solid white;
+  /* Thin white border */
+  border-radius: 50vw;
+  animation: rotateOrbit 10s linear infinite;
+  /* Orbit animation */
+}
+
+
+.inner2-circle {
+  position: absolute;
+  width: 13.021vw;
+  /* Inner circle size (300px radius) */
+  background-color: rgb(233, 9, 9);
+  height: 13.021vw;
+  /* Inner circle size */
+  border-radius: 50vw;
+  /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner3-circle {
+  position: absolute;
+  width: 5.208vw;
+  /* Inner circle size (300px radius) */
+  background-color: yellow;
+  height: 5.208vw;
+  /* Inner circle size */
+  border-radius: 50vw;
+  /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music1 {
+  position: absolute;
+  top: 2.083vw;
+  width: 2.083vw;
+  height: 3.125vw;
+  /* Center the image vertically */
+  left: 17.604vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+.music2 {
+  position: absolute;
+  top: 2.083vw;
+  /* Center the image vertically */
+  left: -14.063vw;
+  width: 2.083vw;
+  height: 3.125vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+
+.music3 {
+  position: absolute;
+  top: -4.948vw;
+  /* Center the image vertically */
+  left: -10.417vw;
+  height: 4.167vw;
+  width: 4.167vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+
+.music4 {
+  position: absolute;
+  top: -15.625vw;
+  /* Center the image vertically */
+  left: 5.208vw;
+  height: 6.771vw;
+  width: 6.771vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+.music5 {
+  position: absolute;
+  top: 11.458vw;
+  /* Center the image vertically */
+  left: -4.948vw;
+  height: 4.167vw;
+  width: 4.167vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+.music6 {
+  position: absolute;
+  top: 14.063vw;
+  /* Center the image vertically */
+  left: 5.208vw;
+  height: 6.771vw;
+  width: 6.771vw;
+  /* Center the image horizontally */
+  transform-origin: center;
+  animation: rotateOrbit 5s linear reverse infinite;
+}
+
+/* Animation to move the image along a circular orbit */
+@keyframes rotateOrbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+.imagestick {
+  position: relative; /* Relative positioning for the container */
+}
+
+/* Stick Image */
+#stick {
+  position: absolute; /* Absolute positioning for placement */
+  top: 32vw; /* Adjust vertical placement */
+  left: 34vw; /* Adjust horizontal placement */
+  width: 10Vw; /* Set the width of the image */
+  height: 12vw; /* Set the height of the image */
+  object-fit: contain; /* Maintain aspect ratio without distortion */
+}
+  /* PART 2 */
+
+.screen2 {
+  position: relative;
+  height: 100vW;
+  width: 100%;
+  top:130VW;
+  height: 5vW;
+
+}
+
+
+/* Общие стили для звезд */
+#smallstar3 img,
+#smallstar4 img {
+  position: absolute;
+  width: 3vw;
+  height: 3vW;
+  transform: scale(1);
+  animation: smallstars 2s ease-in-out infinite;
+}
+
+
+/* Индивидуальные позиции для звезд */
+#smallstar3 img {
+  position: absolute;
+  top: -70vw;
+  left: 80vw;
+
+}
+
+#smallstar4 img {
+  position: absolute;
+  top: -50vw;
+  left: 20vw;
+
+}
+
+
+/* Анимация масштабирования звезд */
+@keyframes smallstars {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* Располагаем контейнеры горизонтально */
+  justify-content: center;
+  /* Центрируем все контейнеры */
+  align-items: flex-start;
+  /* Выравниваем контейнеры сверху */
+  /* Поднимаем контейнеры вверх */
+
+}
+
+.box {
+  position: relative;
+  /* Относительное позиционирование для размещения лучей */
+  width: 31.25vw;
+  height: 20.833vw;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: -40vw;
+}
+
+/* Лучи */
+.light-rays {
+  position: absolute;
+  top: 3vw;
+  /* Центрируем по вертикали относительно контейнера */
+  left: 16vw;
+  /* Центрируем по горизонтали */
+  transform: translate(-50%, -10%);
+  /* Центрируем элемент */
+  width: 20.833vw;
+  /* Ширина "лучей" */
+  height: 20.833vw;
+  /* Высота "лучей" */
+  background: conic-gradient(#B77DFE,
+      /* Прозрачный желтый */
+      #B77DFE);
+  clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+  /* Создаем форму лучей */
+  z-index: 0;
+  /* Размещаем под изображением */
+
+}
+
+
+.ufo-image {
+  width: 23.438vw;
+  /* Размер изображения */
+  height: 10vw;
+  z-index: 1;
+  /* Размещаем поверх лучей */
+}
+
+.text {
+  color: #fff;
+  top: 18vw;
+  /* Белый цвет текста */
+  font-family: "Exo_text";
+  font-size: 2.188vw;
+  text-transform: uppercase;
+  /* Преобразуем текст в заглавные буквы */
+  text-align: center;
+  /* Центрирование текста */
+  margin: 0;
+  /* Убираем лишние отступы */
+  line-height: 1.2;
+  /* Задаем высоту строки для выравнивания */
+  position: absolute;
+  /* Абсолютное позиционирование текста */
+  bottom: 15vw;
+  /* Расстояние текста от нижнего края лучей */
+  z-index: 1;
+  /* Размещаем поверх лучей */
+}
+
+/* Container for circles */
+.circles {
+  display: flex;
+  justify-content: space-between;
+  /* Spaces the circles evenly */
+  position: absolute;
+  /* Allows positioning relative to the .box */
+  bottom: 13.021vw;
+  /* Position circles above the bottom of the box */
+  width: 15.625vw;
+
+  /* Width to space out the circles */
+  z-index: 2;
+  /* Размещаем поверх лучей */
+}
+
+/* General styles for circles */
+.circle {
+  width: 1.667vw;
+  height: 1.667vw;
+  border-radius: 50%;
+  /* Makes the div into a circle */
+  background-color: purple;
+  animation: changeColor 2s infinite;
+  /* Adds a color-changing animation */
+}
+
+/* Animations for color-changing */
+@keyframes changeColor {
+  0% {
+    background-color: #B77DFE;
+  }
+
+  50% {
+    background-color: #FF0101;
+  }
+
+  100% {
+    background-color: #00A459;
+  }
+}
+
+/* Individual circle positioning */
+.circle3 {
+  animation-delay: 0.25s;
+  /* No delay for the first circle */
+  position: absolute;
+  top: 1vw;
+  left: 7vw;
+}
+
+.circle2 {
+  animation-delay: 0.5s;
+  /* Delayed animation for the second circle */
+  position: absolute;
+  top: 0vw;
+  left: 14vw;
+}
+
+.circle1 {
+  animation-delay: 1s;
+  top: 10VW;
+}
+
+
+
+
+
+.screen3 {
+  position: relative;
+  height: 100vW;
+  width: 100%;
+  top: 110VW;
+  overflow: hidden;
+
+}
+
+
+
+/* Общие стили для звезд */
+#smallstar5 img,
+#smallstar6 img,
+#smallstar7 img,
+#smallstar8 img {
+  position: absolute;
+  width: 3vw;
+  height: 3vW;
+  transform: scale(1);
+  animation: smallstars 2s ease-in-out infinite;
+}
+
+
+/* Индивидуальные позиции для звезд */
+#smallstar5 img {
+  position: absolute;
+  top: 45vw;
+  left: 80vw;
+
+}
+
+#smallstar6 img {
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+
+}
+
+#smallstar7 img {
+  position: absolute;
+  top: 50vw;
+  left: 15vw;
+
+}
+
+#smallstar8 img {
+  position: absolute;
+  top: 20vw;
+  left: 75vw;
+
+}
+
+/* Анимация масштабирования звезд */
+@keyframes smallstars {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.planet {
+  position: relative;
+  top: 165VW;
+  /* Create a containing context for absolute positioning */
+}
+
+
+
+
+
+@keyframes orbit2 {
+  0% {
+    transform: translateX(-3.208vw);
+    /* Start to the left */
+  }
+
+  100% {
+    transform: translateX(3.208vw);
+    /* Move to the right */
+  }
+}
+
+.planeta {
+  position: absolute;
+  top: -158Vw;
+  left: 30vw;
+  height: 45.625vw;
+  width: 44.271vw;
+  z-index: 2;
+  /* Lower z-index to place it behind */
+}
+
+.orbittogether {
+  position: absolute;
+  top: -144.5vw;
+  left: 20.208vw;
+  height: 15.625vw;
+  width: 60.125vw;
+  animation: orbit2 3s infinite alternate ease-in-out;
+
+}
+
+.orbitseparated {
+  position: absolute;
+  top: -141vw;
+  left: 27.875vw;
+  height: 15.625vw;
+  width: 44.7vw;
+  animation: orbit1 3s infinite alternate ease-in-out;
+  z-index: 3;
+  /* Lower z-index to place it behind */
+  /* Initially hidden */
+}
+
+#redtag img {
+  position: relative;
+  top: -155vw;
+  left: 40vw;
+  height: 7.625vw;
+  width: 24.7vw;
+  opacity: 0;
+  /* Initially hidden */
+
+}
+
+/* Keyframes for left and right movement */
+@keyframes orbit1 {
+  0% {
+    transform: translateX(-3.208vw);
+    /* Start to the left */
+  }
+
+  100% {
+    transform: translateX(3.208vw);
+    /* Move to the right */
+  }
+}
+
+.planet:hover #redtag img {
+  animation: slideIn 1.5s ease forwards;
+  pointer-events: auto;
+  /* Enable interaction when visible */
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#Rocket1 img {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: -150vw;
+  left: 0VW;
+  object-fit: contain;
+  /* Keep aspect ratio */
+
+  animation: x-axis 7s infinite linear;
+  z-index: 4;
+  /* Lower z-index to place it behind */
+}
+
+.wrapper1 {
+  animation: y-axis 5s infinite ease-in-out;
+  /*transform: translateY(200PX);*/
+}
+
+.wrapper2 {
+  animation: z-axis 7s infinite ease-in-out;
+}
+
+@keyframes x-axis {
+  50% {
+    transform: translateX(28vw);
+  }
+}
+
+@keyframes y-axis {
+  50% {
+    transform: translateY(4vw);
+    /* Move vertically */
+  }
+}
+
+@keyframes z-axis {
+  50% {
+    transform: rotateZ(20deg);
+    /* to modify */
+  }
+}
+
+
+#Rocket2 img {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: -140vw;
+  left: 70VW;
+  object-fit: contain;
+  /* Keep aspect ratio */
+
+  animation: x-axis2 10s infinite linear;
+  /*transform: translateX(600PX); */
+}
+
+.wrapper3 {
+  animation: y-axis2 10s infinite ease-in-out;
+  /*transform: translateY(200PX);*/
+}
+
+.wrapper4 {
+  animation: z-axis2 5s infinite ease-in-out;
+}
+
+@keyframes x-axis2 {
+  50% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes y-axis2 {
+  50% {
+    transform: translateY(15vw);
+
+  }
+}
+
+@keyframes z-axis2 {
+  50% {
+    transform: rotateZ(5deg);
+  }
+}
+
+
+
+#Rocket3 img {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: -100vw;
+  /* Start above the screen */
+  left: 0vw;
+  /* Start from the left edge */
+  object-fit: contain;
+  /* Maintain aspect ratio */
+  animation: diagonal-move 5s infinite ease-in-out alternate;
+}
+
+/* Keyframes for Diagonal Movement */
+@keyframes diagonal-move {
+  0% {
+    transform: translate(0vw, 0vw);
+    /* Starting point */
+  }
+
+  100% {
+    transform: translate(40vw, -40VH);
+    /* End point (bottom-right) */
+  }
+}
+
+
+.screen4 {
+  position: relative;
+  height: 50vw;
+  width: 100%;
+  overflow: hidden;
+  top: 60vw;
+
+}
+
+
+
+
+/* Общие стили для звезд */
+#smallstar9 img,
+#smallstar10 img,
+#smallstar11 img,
+#smallstar12 img,
+#smallstar13 img,
+#smallstar14 img,
+#smallstar15 img
+{
+position: absolute;
+width: 3vw;
+height: 3vW;
+transform: scale(1);
+animation: smallstars1 2s ease-in-out infinite;
+}
+
+
+
+/* Индивидуальные позиции для звезд */
+#smallstar9 img {
+  position: absolute;
+  top: 10vw;
+  left: 85vw;
+}
+
+/* Анимация масштабирования звезд */
+
+#smallstar10 img {
+  position: absolute;
+  top: 20VW;
+  left: 65vw;
+}
+
+#smallstar11 img {
+  position: absolute;
+  top: 35VW;
+  left: 27VW;
+background-color: #000;}
+
+
+
+@keyframes smallstars1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.centered-text {
+  text-align: center;
+position: relative;
+top: 15.625vw;
+}
+
+
+/* Date Style */
+.date {
+ 
+  color: #FEFF01;
+  font-size: 5vw; /* Larger font size */
+  font-weight: bold; /* Bold text */
+}
+
+
+/* Now Style */
+.now {
+  color: #FEFF01;
+  font-size: 5vw; /* Slightly smaller font size */
+  font-weight: bold; /* Bold text */
+  margin-top: 1.521vw; /* Space between date and now */
+}
+
+#Rocket4 img {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top:0vw;
+  left: 70VW;
+  rotate: -135deg;
+  object-fit: contain;
+  /* Keep aspect ratio */
+  animation: x-axis4 5s infinite linear;
+  /*transform: translateX(600PX); */
+}
+
+.wrapper5 {
+  animation: y-axis4 5s infinite ease-in-out;
+  /*transform: translateY(200PX);*/
+}
+.wrapper6 {
+  animation: z-axis4 5s infinite ease-in-out;
+}
+@keyframes x-axis4 {
+  50% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes y-axis4 {
+  50% {
+    transform: translateY(20vw);
+  }
+}
+
+
+@keyframes z-axis4 {
+  50% {
+    transform: rotateZ(1deg);
+  }
+}
+
+
+#Rocket5 img {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top:-0vw;
+  left: 20vW;
+  rotate: -185deg;
+  object-fit: contain;
+  /* Keep aspect ratio */
+  animation: x-axis5 3s infinite linear;
+  /*transform: translateX(600PX); */
+}
+
+.wrapper7 {
+  animation: y-axis5 3s infinite ease-in-out;
+  /*transform: translateY(200PX);*/
+}
+
+.wrapper8 {
+  animation: z-axis5 3s infinite ease-in-out;
+}
+
+
+@keyframes x-axis5 {
+  50% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes y-axis5 {
+  50% {
+    transform: translateY(20vw);
+  }
+}
+
+@keyframes z-axis5 {
+  50% {
+    transform: rotateZ(3deg);
+  }
+}
+
+.footer{
+  position: relative;
+top: 60vw;}
+
+.running_text2 {
+  position: relative;
+  width: 100%;
+  height: 5vw; /* Adjust height as needed */
+  background: hsl(267, 98%, 74%); /* Purple background */
+  /*overflow: hidden; /* Hide overflowing text */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  top: 0vw;
+}
+
+.text_first2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: "Exo_text";
+padding: 1VW;
+}
+
+.text_item1 {
+  padding-right:2vw; /* Add spacing between phrases */
+
+}
