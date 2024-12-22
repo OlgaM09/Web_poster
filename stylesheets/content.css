@@ -5,30 +5,35 @@ body {
 
 .running_text {
   position: relative;
-  width: -100%;
-  height: 5vw; /* Adjust height as needed */
-  background: hsl(267, 98%, 74%); /* Purple background */
-  /*overflow: hidden; /* Hide overflowing text */
-  display: flex;
-  align-items: center; /* Center text vertically */
+  width: 100%;
+  height: 5vw; 
+  background: hsl(267, 98%, 74%); 
   top: 0vw;
 }
-/* Scrolling Text */
 
-.text_first2 {
+.text_first {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 3vw;
   font-family: "Exo_text";
-padding: 1VW;
+  padding: 1vw;
+  animation: runttext 5s linear infinite;
+  position: absolute;
+  white-space: nowrap;
+    
 }
 
-/* Spacing Between Words */
-.text_item1 {
+@keyframes runttext{
+  0%{ right: -50%}
+  100%{ right: 02%}
+}
+
+
+
+.text_item {
   padding-right:2vw; /* Add spacing between phrases */
+
 }
-
-
 
 /* Общие стили для звезд */
 #smallstar1 img,
@@ -307,7 +312,7 @@ padding: 1VW;
 /* Stick Image */
 #stick {
   position: absolute; /* Absolute positioning for placement */
-  top: 32vw; /* Adjust vertical placement */
+  top: 31vw; /* Adjust vertical placement */
   left: 34vw; /* Adjust horizontal placement */
   width: 10Vw; /* Set the width of the image */
   height: 12vw; /* Set the height of the image */
@@ -329,8 +334,8 @@ padding: 1VW;
 #smallstar3 img,
 #smallstar4 img {
   position: absolute;
-  width: 3vw;
-  height: 3vW;
+  width: 2vw;
+  height: 4vW;
   transform: scale(1);
   animation: smallstars 2s ease-in-out infinite;
 }
@@ -346,7 +351,7 @@ padding: 1VW;
 
 #smallstar4 img {
   position: absolute;
-  top: -50vw;
+  top: -70vw;
   left: 20vw;
 
 }
@@ -389,30 +394,47 @@ padding: 1VW;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  top: -40vw;
+  top: -55vw;
 }
 
 /* Лучи */
-.light-rays {
+.box:first-of-type .light-rays {
   position: absolute;
   top: 3vw;
-  /* Центрируем по вертикали относительно контейнера */
   left: 16vw;
-  /* Центрируем по горизонтали */
   transform: translate(-50%, -10%);
-  /* Центрируем элемент */
   width: 20.833vw;
-  /* Ширина "лучей" */
   height: 20.833vw;
-  /* Высота "лучей" */
-  background: conic-gradient(#B77DFE,
-      /* Прозрачный желтый */
-      #B77DFE);
+  background: linear-gradient(to bottom, #B77DFE 30%, rgba(183, 125, 254, 0) 100%);
   clip-path: polygon(50% 0, 100% 100%, 0% 100%);
-  /* Создаем форму лучей */
   z-index: 0;
-  /* Размещаем под изображением */
 
+}
+
+.box:nth-of-type(2) .light-rays {
+  position: absolute;
+  top: 3vw;
+  left: 16vw;
+  transform: translate(-50%, -10%);
+  width: 20.833vw;
+  height: 20.833vw;
+  background: linear-gradient(to bottom, #FF0101 30%, rgba(183, 125, 254, 0) 100%);
+
+  clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+
+}
+.box:nth-of-type(3) .light-rays {
+  position: absolute;
+  top: 3vw;
+  left: 16vw;
+  transform: translate(-50%, -10%);
+  width: 20.833vw;
+  height: 20.833vw;
+  background: linear-gradient(to bottom, #00A459 30%, rgba(183, 125, 254, 0) 100%);
+
+  clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+  z-index: 0;
 }
 
 
@@ -518,7 +540,7 @@ padding: 1VW;
   position: relative;
   height: 100vW;
   width: 100%;
-  top: 110VW;
+  top: 95VW;
   overflow: hidden;
 
 }
@@ -531,8 +553,8 @@ padding: 1VW;
 #smallstar7 img,
 #smallstar8 img {
   position: absolute;
-  width: 3vw;
-  height: 3vW;
+  width: 2vw;
+  height: 4vW;
   transform: scale(1);
   animation: smallstars 2s ease-in-out infinite;
 }
@@ -815,8 +837,8 @@ padding: 1VW;
 #smallstar15 img
 {
 position: absolute;
-width: 3vw;
-height: 3vW;
+width: 2vw;
+height: 4vW;
 transform: scale(1);
 animation: smallstars1 2s ease-in-out infinite;
 }
@@ -974,21 +996,28 @@ top: 60vw;}
 .running_text2 {
   position: relative;
   width: 100%;
-  height: 5vw; /* Adjust height as needed */
-  background: hsl(267, 98%, 74%); /* Purple background */
-  /*overflow: hidden; /* Hide overflowing text */
-  display: flex;
-  align-items: center; /* Center text vertically */
+  height: 5vw; 
+  background: hsl(267, 98%, 74%); 
   top: 0vw;
 }
 
-.text_first2 {
+.text_first1 {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 3vw;
   font-family: "Exo_text";
-padding: 1VW;
+  padding: 1vw;
+  animation: runttext 5s linear infinite;
+  position: absolute;
+  white-space: nowrap;
+    
 }
+
+@keyframes runttext{
+  0%{ right: -50%}
+  100%{ right: 02%}
+}
+
 
 .text_item1 {
   padding-right:2vw; /* Add spacing between phrases */
