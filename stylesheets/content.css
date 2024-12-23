@@ -9,6 +9,8 @@ body {
   height: 5vw; 
   background: hsl(267, 98%, 74%); 
   top: 0vw;
+  overflow: hidden; /* обрезает контент - еесли он не поместился в контейнер */
+
 }
 
 .text_first {
@@ -17,26 +19,28 @@ body {
   font-size: 3vw;
   font-family: "Exo_text";
   padding: 1vw;
-  animation: runttext 5s linear infinite;
+  animation: runttext 2s linear infinite;
   position: absolute;
   white-space: nowrap;
-    
+ 
 }
 
-@keyframes runttext{
-  0%{ right: -50%}
-  100%{ right: 02%}
+@keyframes runttext{0%{ left: -120%; }
+100%{ left: -65%; }
 }
 
 
+
+*/
 
 .text_item {
   padding-right:2vw; /* Add spacing between phrases */
+  width: 100%;
 
 }
 
 /* Общие стили для звезд */
-#smallstar1 img,
+#smallstar1 img,#smallstar12 img,#smallstar13 img,
 #smallstar2 img {
   position: absolute;
   width: 2vw;
@@ -60,11 +64,21 @@ body {
 
 #smallstar2 img {
   position: absolute;
-  top: 15vw;
-  left: 20vw;
+  top: 25vw;
+  left: 15vw;
 }
 
+#smallstar12 img {
+  position: absolute;
+  top: 20vw;
+  left: 65vw;
+}
 
+#smallstar13 img {
+  position: absolute;
+  top: 9vw;
+  left: 35vw;
+}
 
 
 /* Анимация масштабирования звезд */
@@ -331,7 +345,7 @@ body {
 
 
 /* Общие стили для звезд */
-#smallstar3 img,
+#smallstar3 img,#smallstar14 img,#smallstar15 img,
 #smallstar4 img {
   position: absolute;
   width: 2vw;
@@ -344,19 +358,29 @@ body {
 /* Индивидуальные позиции для звезд */
 #smallstar3 img {
   position: absolute;
-  top: -70vw;
-  left: 80vw;
+  top: -75vw;
+  left: 90vw;
 
 }
 
 #smallstar4 img {
   position: absolute;
   top: -70vw;
-  left: 20vw;
+  left: 10vw;
 
 }
+#smallstar14 img {
+  position: absolute;
+  top: -60vw;
+  left: 30vw;
 
+}
+#smallstar15 img {
+  position: absolute;
+  top: -70vw;
+  left: 55vw;
 
+}
 /* Анимация масштабирования звезд */
 @keyframes smallstars {
   0% {
@@ -551,6 +575,8 @@ body {
 #smallstar5 img,
 #smallstar6 img,
 #smallstar7 img,
+#smallstar16 img,
+#smallstar17 img,
 #smallstar8 img {
   position: absolute;
   width: 2vw;
@@ -588,6 +614,18 @@ body {
   left: 75vw;
 
 }
+#smallstar16 img {
+  position: absolute;
+  top: 7vw;
+  left: 60vw;
+
+}
+#smallstar17 img {
+  position: absolute;
+  top: 35vw;
+  left: 5vw;
+
+}
 
 /* Анимация масштабирования звезд */
 @keyframes smallstars {
@@ -608,6 +646,7 @@ body {
 .planet {
   position: relative;
   top: 165VW;
+  left: -2VW;
   /* Create a containing context for absolute positioning */
 }
 
@@ -820,7 +859,7 @@ body {
   height: 50vw;
   width: 100%;
   overflow: hidden;
-  top: 60vw;
+  top: 45vw;
 
 }
 
@@ -834,6 +873,7 @@ body {
 #smallstar12 img,
 #smallstar13 img,
 #smallstar14 img,
+#smallstar18 img,
 #smallstar15 img
 {
 position: absolute;
@@ -864,8 +904,13 @@ animation: smallstars1 2s ease-in-out infinite;
   position: absolute;
   top: 35VW;
   left: 27VW;
-background-color: #000;}
+}
 
+#smallstar18 img {
+  position: absolute;
+  top: 45VW;
+  left: 75VW;
+}
 
 
 @keyframes smallstars1 {
@@ -897,6 +942,8 @@ top: 15.625vw;
   color: #FEFF01;
   font-size: 5vw; /* Larger font size */
   font-weight: bold; /* Bold text */
+  animation: dateandtime 3s ;
+
 }
 
 
@@ -906,7 +953,9 @@ top: 15.625vw;
   font-size: 5vw; /* Slightly smaller font size */
   font-weight: bold; /* Bold text */
   margin-top: 1.521vw; /* Space between date and now */
+  animation: dateandtime 3s ;
 }
+@keyframes dateandtime {0%{transform:scaleX(.1)}100%{transform:scaleX(1)}}
 
 #Rocket4 img {
   position: absolute;
@@ -991,7 +1040,7 @@ top: 15.625vw;
 
 .footer{
   position: relative;
-top: 60vw;}
+top: 50vw;}
 
 .running_text2 {
   position: relative;
@@ -999,6 +1048,8 @@ top: 60vw;}
   height: 5vw; 
   background: hsl(267, 98%, 74%); 
   top: 0vw;
+  overflow: hidden; /* обрезает контент - еесли он не поместился в контейнер */
+
 }
 
 .text_first1 {
@@ -1012,12 +1063,12 @@ top: 60vw;}
   white-space: nowrap;
     
 }
-
+/* 
 @keyframes runttext{
   0%{ right: -50%}
   100%{ right: 02%}
 }
-
+*/
 
 .text_item1 {
   padding-right:2vw; /* Add spacing between phrases */
