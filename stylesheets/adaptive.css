@@ -1,16 +1,21 @@
 
-/*@media (max-width: 800px) {
-  .running_text {
-    height: 7vw; 
 
-  .text_first {
-    font-size: 5vw;
-  }
-}*/
 @media (max-width: 415px) {
   .running_text {
-    height: 7vw; /* Styles for devices <= 414px */
+    height: 7vw; 
   }
   .text_first {
     font-size: 5vw;
-  }}
+  }
+.imagestick {
+  top: -2vw;
+}
+
+.date {
+  font-size: 7vw; 
+}
+
+.now {
+  font-size: 7vw; /* Slightly smaller font size */
+}
+}

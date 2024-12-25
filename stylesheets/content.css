@@ -108,13 +108,13 @@ body {
 .lines_container {
   position: absolute;
   /* Абсолютное позиционирование */
-  top: 28vw;
+  top: 30vw;
   /* Прижимаем контейнер к верхнему краю */
   left: 0VW;
   /* Прижимаем к левому краю */
   width: 100%; /* Full width */
   /* Контейнер на всю ширину */
-  height: 30vw;
+  height: 25vw;
   /* Высота блока, г;де будут линии */
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ body {
 /* Стиль для линий */
 .line_purple {
   width: auto;
-  height: 1VW;
+  height: 0.6VW;
   background-color: #B77DFE;
 }
 
@@ -138,32 +138,32 @@ body {
 
 .line_red {
   width: 100%; /* Full width */
-  height: 1vw;
+  height: 0.6vw;
   background-color: #FF0101;
 }
 
 .line_green {
   width: 100%; /* Full width */
-  height: 1vw;
+  height: 0.6vw;
   background-color: #00A459;
 }
 
 .line_yellow {
   width: 100%; /* Full width */
-  height: 1vw;
+  height: 0.6vw;
   background-color: #FEFF01;
   ;
 }
 
 .line_red2 {
   width: 100%; /* Full width */
-  height: 1vw;
+  height: 0.6vw;
   background-color: #FF0101;
 }
 
 .line_purple2 {
   width: 100%; /* Full width */
-  height: 1vw;
+  height: 0.6vw;
   background-color: #B77DFE;
 }
 
@@ -654,17 +654,7 @@ body {
 
 
 
-@keyframes orbit2 {
-  0% {
-    transform: translateX(-3.208vw);
-    /* Start to the left */
-  }
 
-  100% {
-    transform: translateX(3.208vw);
-    /* Move to the right */
-  }
-}
 
 .planeta {
   position: absolute;
@@ -700,13 +690,22 @@ body {
 
 #redtag img {
   position: relative;
-  top: -155vw;
+  top: -156vw;
   left: 40vw;
-  height: 7.625vw;
+  height: 9vw;
   width: 24.7vw;
-  opacity: 0;
-  /* Initially hidden */
+  animation: slide-top 1.5s infinite alternate ;
+}
 
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2VW);
+     transform: translateY(2VW);
+  }
 }
 
 /* Keyframes for left and right movement */
@@ -721,22 +720,15 @@ body {
     /* Move to the right */
   }
 }
-
-.planet:hover #redtag img {
-  animation: slideIn 1.5s ease forwards;
-  pointer-events: auto;
-  /* Enable interaction when visible */
-}
-
-/* Animation Keyframes */
-@keyframes slideIn {
+@keyframes orbit2 {
   0% {
-    opacity: 0;
+    transform: translateX(-3.208vw);
+    /* Start to the left */
   }
 
-
   100% {
-    opacity: 1;
+    transform: translateX(3.208vw);
+    /* Move to the right */
   }
 }
 
