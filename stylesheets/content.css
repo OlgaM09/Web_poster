@@ -848,7 +848,7 @@ body {
   }
 
   100% {
-    transform: translate(40vw, -40VH);
+    transform: translate(40vw, -40Vw);
     /* End point (bottom-right) */
   }
 }
@@ -942,7 +942,7 @@ top: 15.625vw;
   color: #FEFF01;
   font-size: 5vw; /* Larger font size */
   font-weight: bold; /* Bold text */
-  animation: dateandtime 3s ;
+  animation: dateandtime 3s ease infinite;
 
 }
 
@@ -953,7 +953,7 @@ top: 15.625vw;
   font-size: 5vw; /* Slightly smaller font size */
   font-weight: bold; /* Bold text */
   margin-top: 1.521vw; /* Space between date and now */
-  animation: dateandtime 3s ;
+  animation: dateandtime 3s ease infinite;
 }
 @keyframes dateandtime {0%{transform:scaleX(.1)}100%{transform:scaleX(1)}}
 
@@ -1074,3 +1074,5 @@ top: 50vw;}
   padding-right:2vw; /* Add spacing between phrases */
 
 }
+
+

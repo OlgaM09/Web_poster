@@ -1,3 +1,16 @@
-@media (max-width:1920px){
 
-}
+/*@media (max-width: 800px) {
+  .running_text {
+    height: 7vw; 
+
+  .text_first {
+    font-size: 5vw;
+  }
+}*/
+@media (max-width: 415px) {
+  .running_text {
+    height: 7vw; /* Styles for devices <= 414px */
+  }
+  .text_first {
+    font-size: 5vw;
+  }}
