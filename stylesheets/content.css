@@ -1,6 +1,6 @@
 body {
   background: #010101;
-  cursor: url('../img/rocket.png') , auto;  /* Full height of the viewport */
+  cursor: url('../img/rocket.png') , auto;  
 }
 
 .running_text {
@@ -9,7 +9,7 @@ body {
   height: 5vw; 
   background: hsl(267, 98%, 74%); 
   top: 0vw;
-  overflow: hidden; /* обрезает контент - еесли он не поместился в контейнер */
+  overflow: hidden; 
 
 }
 
@@ -34,7 +34,7 @@ body {
 */
 
 .text_item {
-  padding-right:2vw; /* Add spacing between phrases */
+  padding-right:2vw; 
   width: 100%;
 
 }
@@ -107,20 +107,13 @@ body {
 /* Контейнер для всех линий */
 .lines_container {
   position: absolute;
-  /* Абсолютное позиционирование */
   top: 30vw;
-  /* Прижимаем контейнер к верхнему краю */
   left: 0VW;
-  /* Прижимаем к левому краю */
-  width: 100%; /* Full width */
-  /* Контейнер на всю ширину */
+  width: 100%; 
   height: 25vw;
-  /* Высота блока, г;де будут линии */
   display: flex;
   flex-direction: column;
-  /* Линии располагаются вертикально */
   justify-content: space-around;
-  /* Распределяем линии равномерно */
 }
 
 
@@ -137,32 +130,32 @@ body {
 
 
 .line_red {
-  width: 100%; /* Full width */
+  width: 100%; 
   height: 0.6vw;
   background-color: #FF0101;
 }
 
 .line_green {
-  width: 100%; /* Full width */
+  width: 100%;
   height: 0.6vw;
   background-color: #00A459;
 }
 
 .line_yellow {
-  width: 100%; /* Full width */
+  width: 100%; 
   height: 0.6vw;
   background-color: #FEFF01;
   ;
 }
 
 .line_red2 {
-  width: 100%; /* Full width */
+  width: 100%;
   height: 0.6vw;
   background-color: #FF0101;
 }
 
 .line_purple2 {
-  width: 100%; /* Full width */
+  width: 100%; 
   height: 0.6vw;
   background-color: #B77DFE;
 }
@@ -176,16 +169,12 @@ body {
   left: 35VW;
   background-color: black;
   width: 31.25vw;
-  /* Container size */
   height: 31.25vw;
-  /* Container size */
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.417vw solid white;
-  /* Thin white border */
   border-radius: 0.521vw;
-  /* Rounded corners */
   border-radius: 50vw;
   animation: rotateOrbit 10s linear infinite;
 }
@@ -194,31 +183,23 @@ body {
 .inner-circle {
   position: absolute;
   width: 23.438vw;
-  /* Inner circle size (300px radius) */
   height: 23.438vw;
-  /* Inner circle size */
   border-radius: 50vw;
-  /* Makes it a circle */
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.417vw solid white;
-  /* Thin white border */
   border-radius: 50vw;
   animation: rotateOrbit 10s linear infinite;
-  /* Orbit animation */
 }
 
 
 .inner2-circle {
   position: absolute;
   width: 13.021vw;
-  /* Inner circle size (300px radius) */
   background-color: rgb(233, 9, 9);
   height: 13.021vw;
-  /* Inner circle size */
   border-radius: 50vw;
-  /* Makes it a circle */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,12 +208,9 @@ body {
 .inner3-circle {
   position: absolute;
   width: 5.208vw;
-  /* Inner circle size (300px radius) */
   background-color: yellow;
   height: 5.208vw;
-  /* Inner circle size */
   border-radius: 50vw;
-  /* Makes it a circle */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,9 +221,7 @@ body {
   top: 2.083vw;
   width: 2.083vw;
   height: 3.125vw;
-  /* Center the image vertically */
   left: 17.604vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
@@ -253,11 +229,9 @@ body {
 .music2 {
   position: absolute;
   top: 2.083vw;
-  /* Center the image vertically */
   left: -14.063vw;
   width: 2.083vw;
   height: 3.125vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
@@ -266,11 +240,9 @@ body {
 .music3 {
   position: absolute;
   top: -4.948vw;
-  /* Center the image vertically */
   left: -10.417vw;
   height: 4.167vw;
   width: 4.167vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
@@ -279,11 +251,9 @@ body {
 .music4 {
   position: absolute;
   top: -15.625vw;
-  /* Center the image vertically */
   left: 5.208vw;
   height: 6.771vw;
   width: 6.771vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
@@ -291,11 +261,9 @@ body {
 .music5 {
   position: absolute;
   top: 11.458vw;
-  /* Center the image vertically */
   left: -4.948vw;
   height: 4.167vw;
   width: 4.167vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
@@ -303,16 +271,14 @@ body {
 .music6 {
   position: absolute;
   top: 14.063vw;
-  /* Center the image vertically */
   left: 5.208vw;
   height: 6.771vw;
   width: 6.771vw;
-  /* Center the image horizontally */
   transform-origin: center;
   animation: rotateOrbit 5s linear reverse infinite;
 }
 
-/* Animation to move the image along a circular orbit */
+
 @keyframes rotateOrbit {
   100% {
     rotate: 1turn;
@@ -320,17 +286,17 @@ body {
 }
 
 .imagestick {
-  position: relative; /* Relative positioning for the container */
+  position: relative; 
 }
 
 /* Stick Image */
 #stick {
-  position: absolute; /* Absolute positioning for placement */
-  top: 31vw; /* Adjust vertical placement */
-  left: 34vw; /* Adjust horizontal placement */
-  width: 10Vw; /* Set the width of the image */
-  height: 12vw; /* Set the height of the image */
-  object-fit: contain; /* Maintain aspect ratio without distortion */
+  position: absolute; 
+  top: 31vw; 
+  left: 34vw; 
+  width: 10Vw; 
+  height: 12vw; 
+  object-fit: contain; 
 }
   /* PART 2 */
 
@@ -399,18 +365,14 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  /* Располагаем контейнеры горизонтально */
   justify-content: center;
-  /* Центрируем все контейнеры */
   align-items: flex-start;
-  /* Выравниваем контейнеры сверху */
-  /* Поднимаем контейнеры вверх */
+ 
 
 }
 
 .box {
   position: relative;
-  /* Относительное позиционирование для размещения лучей */
   width: 31.25vw;
   height: 20.833vw;
   background-color: #000;
@@ -464,59 +426,41 @@ body {
 
 .ufo-image {
   width: 23.438vw;
-  /* Размер изображения */
   height: 10vw;
   z-index: 1;
-  /* Размещаем поверх лучей */
 }
 
 .text {
   color: #fff;
   top: 18vw;
-  /* Белый цвет текста */
   font-family: "Exo_text";
   font-size: 2.188vw;
   text-transform: uppercase;
-  /* Преобразуем текст в заглавные буквы */
   text-align: center;
-  /* Центрирование текста */
   margin: 0;
-  /* Убираем лишние отступы */
   line-height: 1.2;
-  /* Задаем высоту строки для выравнивания */
   position: absolute;
-  /* Абсолютное позиционирование текста */
   bottom: 15vw;
-  /* Расстояние текста от нижнего края лучей */
   z-index: 1;
-  /* Размещаем поверх лучей */
 }
 
 /* Container for circles */
 .circles {
   display: flex;
   justify-content: space-between;
-  /* Spaces the circles evenly */
   position: absolute;
-  /* Allows positioning relative to the .box */
   bottom: 13.021vw;
-  /* Position circles above the bottom of the box */
   width: 15.625vw;
-
-  /* Width to space out the circles */
   z-index: 2;
-  /* Размещаем поверх лучей */
 }
 
-/* General styles for circles */
+
 .circle {
   width: 1.667vw;
   height: 1.667vw;
   border-radius: 50%;
-  /* Makes the div into a circle */
   background-color: purple;
   animation: changeColor 2s infinite;
-  /* Adds a color-changing animation */
 }
 
 /* Animations for color-changing */
@@ -534,10 +478,9 @@ body {
   }
 }
 
-/* Individual circle positioning */
+
 .circle3 {
   animation-delay: 0.25s;
-  /* No delay for the first circle */
   position: absolute;
   top: 1vw;
   left: 7vw;
@@ -545,7 +488,6 @@ body {
 
 .circle2 {
   animation-delay: 0.5s;
-  /* Delayed animation for the second circle */
   position: absolute;
   top: 0vw;
   left: 14vw;
@@ -557,18 +499,13 @@ body {
 }
 
 
-
-
-
 .screen3 {
   position: relative;
   height: 100vW;
   width: 100%;
   top: 95VW;
   overflow: hidden;
-
 }
-
 
 
 /* Общие стили для звезд */
@@ -647,14 +584,7 @@ body {
   position: relative;
   top: 165VW;
   left: -2VW;
-  /* Create a containing context for absolute positioning */
 }
-
-
-
-
-
-
 
 .planeta {
   position: absolute;
@@ -663,7 +593,6 @@ body {
   height: 45.625vw;
   width: 44.271vw;
   z-index: 2;
-  /* Lower z-index to place it behind */
 }
 
 .orbittogether {
@@ -684,8 +613,6 @@ body {
   width: 44.7vw;
   animation: orbit1 3s infinite alternate ease-in-out;
   z-index: 3;
-  /* Lower z-index to place it behind */
-  /* Initially hidden */
 }
 
 #redtag img {
@@ -708,27 +635,27 @@ body {
   }
 }
 
-/* Keyframes for left and right movement */
+
 @keyframes orbit1 {
   0% {
     transform: translateX(-3.208vw);
-    /* Start to the left */
+
   }
 
   100% {
     transform: translateX(3.208vw);
-    /* Move to the right */
+   
   }
 }
 @keyframes orbit2 {
   0% {
     transform: translateX(-3.208vw);
-    /* Start to the left */
+   
   }
 
   100% {
     transform: translateX(3.208vw);
-    /* Move to the right */
+    
   }
 }
 
@@ -739,16 +666,14 @@ body {
   top: -150vw;
   left: 0VW;
   object-fit: contain;
-  /* Keep aspect ratio */
-
   animation: x-axis 7s infinite linear;
   z-index: 4;
-  /* Lower z-index to place it behind */
+
 }
 
 .wrapper1 {
   animation: y-axis 5s infinite ease-in-out;
-  /*transform: translateY(200PX);*/
+ 
 }
 
 .wrapper2 {
@@ -764,14 +689,14 @@ body {
 @keyframes y-axis {
   50% {
     transform: translateY(4vw);
-    /* Move vertically */
+    
   }
 }
 
 @keyframes z-axis {
   50% {
     transform: rotateZ(20deg);
-    /* to modify */
+    
   }
 }
 
@@ -783,15 +708,13 @@ body {
   top: -140vw;
   left: 70VW;
   object-fit: contain;
-  /* Keep aspect ratio */
-
   animation: x-axis2 10s infinite linear;
-  /*transform: translateX(600PX); */
+  
 }
 
 .wrapper3 {
   animation: y-axis2 10s infinite ease-in-out;
-  /*transform: translateY(200PX);*/
+  
 }
 
 .wrapper4 {
@@ -824,24 +747,21 @@ body {
   height: 10vw;
   width: 10vw;
   top: -100vw;
-  /* Start above the screen */
   left: 0vw;
-  /* Start from the left edge */
   object-fit: contain;
-  /* Maintain aspect ratio */
   animation: diagonal-move 5s infinite ease-in-out alternate;
 }
 
-/* Keyframes for Diagonal Movement */
+
 @keyframes diagonal-move {
   0% {
     transform: translate(0vw, 0vw);
-    /* Starting point */
+   
   }
 
   100% {
     transform: translate(40vw, -40Vw);
-    /* End point (bottom-right) */
+    
   }
 }
 
@@ -854,8 +774,6 @@ body {
   top: 45vw;
 
 }
-
-
 
 
 /* Общие стили для звезд */
@@ -874,8 +792,6 @@ height: 4vW;
 transform: scale(1);
 animation: smallstars1 2s ease-in-out infinite;
 }
-
-
 
 /* Индивидуальные позиции для звезд */
 #smallstar9 img {
@@ -928,23 +844,22 @@ top: 15.625vw;
 }
 
 
-/* Date Style */
 .date {
  
   color: #FEFF01;
-  font-size: 5vw; /* Larger font size */
-  font-weight: bold; /* Bold text */
+  font-size: 5vw; 
+  font-weight: bold; 
   animation: dateandtime 3s ease infinite;
 
 }
 
 
-/* Now Style */
+
 .now {
   color: #FEFF01;
-  font-size: 5vw; /* Slightly smaller font size */
-  font-weight: bold; /* Bold text */
-  margin-top: 1.521vw; /* Space between date and now */
+  font-size: 5vw; 
+  font-weight: bold; 
+  margin-top: 1.521vw; 
   animation: dateandtime 3s ease infinite;
 }
 @keyframes dateandtime {0%{transform:scaleX(.1)}100%{transform:scaleX(1)}}
@@ -957,14 +872,13 @@ top: 15.625vw;
   left: 70VW;
   rotate: -135deg;
   object-fit: contain;
-  /* Keep aspect ratio */
   animation: x-axis4 5s infinite linear;
-  /*transform: translateX(600PX); */
+  
 }
 
 .wrapper5 {
   animation: y-axis4 5s infinite ease-in-out;
-  /*transform: translateY(200PX);*/
+  
 }
 .wrapper6 {
   animation: z-axis4 5s infinite ease-in-out;
@@ -997,14 +911,13 @@ top: 15.625vw;
   left: 20vW;
   rotate: -185deg;
   object-fit: contain;
-  /* Keep aspect ratio */
   animation: x-axis5 3s infinite linear;
-  /*transform: translateX(600PX); */
+ 
 }
 
 .wrapper7 {
   animation: y-axis5 3s infinite ease-in-out;
-  /*transform: translateY(200PX);*/
+
 }
 
 .wrapper8 {
@@ -1040,7 +953,7 @@ top: 50vw;}
   height: 5vw; 
   background: hsl(267, 98%, 74%); 
   top: 0vw;
-  overflow: hidden; /* обрезает контент - еесли он не поместился в контейнер */
+  overflow: hidden; 
 
 }
 
@@ -1055,15 +968,10 @@ top: 50vw;}
   white-space: nowrap;
     
 }
-/* 
-@keyframes runttext{
-  0%{ right: -50%}
-  100%{ right: 02%}
-}
-*/
+
 
 .text_item1 {
-  padding-right:2vw; /* Add spacing between phrases */
+  padding-right:2vw; 
 
 }
 
