@@ -1,6 +1,6 @@
 body {
   background: #010101;
-             /* Full height of the viewport */
+  cursor: url('../img/rocket.png') , auto;  /* Full height of the viewport */
 }
 
 .running_text {
