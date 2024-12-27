@@ -11,6 +11,7 @@ body {
   top: 0vw;
   overflow: hidden; 
 
+
 }
 
 .text_first {
@@ -19,10 +20,10 @@ body {
   font-size: 3vw;
   font-family: "Exo_text";
   padding: 1vw;
-  animation: runttext 2s linear infinite;
+  animation: runttext 5s linear infinite;
   position: absolute;
   white-space: nowrap;
- 
+  
 }
 
 @keyframes runttext{0%{ left: -120%; }
@@ -31,12 +32,11 @@ body {
 
 
 
-*/
+
 
 .text_item {
-  padding-right:2vw; 
-  width: 100%;
-
+  padding-right:4vw; 
+  
 }
 
 /* Общие стили для звезд */
@@ -945,7 +945,7 @@ top: 15.625vw;
 
 .footer{
   position: relative;
-top: 50vw;}
+  top: 50vw;}
 
 .running_text2 {
   position: relative;
@@ -971,7 +971,7 @@ top: 50vw;}
 
 
 .text_item1 {
-  padding-right:2vw; 
+  padding-right:4vw;  
 
 }
 
